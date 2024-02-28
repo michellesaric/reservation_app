@@ -1,22 +1,18 @@
-import "./App.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/home/Home";
+import Reservation from "./pages/reservation/Reservation";
+import Error from "./pages/error/Error";
 
-function App() {
-  let number = 0;
-  const numberText = document.getElementById("number");
-
-  const handleClick = () => {
-    number++;
-    console.log(number);
-    numberText.innerHTML = number.toString;
-  };
-
+const App = () => {
   return (
-    <div>
-      <h2 id="number">{number}</h2>
-
-      <button onClick={handleClick}>Click me</button>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/reservation" element={<Reservation />} />
+        <Route path="*" element={<Error />} />
+      </Routes>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
