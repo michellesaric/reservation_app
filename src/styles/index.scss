@@ -1,0 +1,10 @@
+@forward "./fonts";
+@forward "./layout";
+@import "./variables";
+@import "../components/navbar/navBar";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

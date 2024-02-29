@@ -1,0 +1,21 @@
+@mixin FlexCenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin FlexSpaceBetween() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin FlexCenterHorizontal() {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin FlexCenterVertical() {
+  display: flex;
+  align-items: center;
+}

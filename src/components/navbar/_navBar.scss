@@ -1,0 +1,23 @@
+@import "../../styles/fonts";
+@import "../../styles/layout";
+
+.nav {
+  width: 100%;
+  padding: 30px 0px 50px;
+  background-color: $blue;
+  @include FlexCenterHorizontal;
+
+  .nav__wrapper {
+    width: 1100px;
+    @include FlexSpaceBetween;
+
+    .nav__logo {
+      @include RobotoMedium($white, 34px);
+    }
+
+    .nav__user-icon {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
