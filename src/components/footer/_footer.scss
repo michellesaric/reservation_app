@@ -1,0 +1,17 @@
+@import "../../styles/fonts";
+@import "../../styles/layout";
+
+.footer {
+  background-color: $blue;
+  width: 100%;
+  @include FlexCenterHorizontal;
+
+  .footer__wrapper {
+    width: 1100px;
+    padding: 30px 0px;
+
+    .footer__text {
+      @include RobotoMedium($white, 24px);
+    }
+  }
+}

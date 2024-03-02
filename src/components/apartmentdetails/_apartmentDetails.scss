@@ -2,7 +2,7 @@
 @import "../../styles/layout";
 
 .apartment-details {
-  border-top: 1px solid $gray;
+  border-top: 1px solid $secondaryGray;
   margin-top: 25px;
 
   .apartment-details__amenities,
@@ -33,16 +33,19 @@
       @include RobotoMedium($black, 20px);
     }
 
-    .apartment-details__button {
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      background-color: $blue;
-      padding: 10px 70px;
-      @include RobotoMedium($white, 18px);
+    .apartment-details__link {
+      .apartment-details__button {
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        background-color: $blue;
+        padding: 10px 70px;
+        @include RobotoMedium($white, 18px);
+        text-decoration: none;
 
-      &:hover {
-        background-color: $secondaryBlue;
+        &:hover {
+          background-color: $secondaryBlue;
+        }
       }
     }
   }

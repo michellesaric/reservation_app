@@ -45,6 +45,11 @@
         padding: 10px 25px;
         @include RobotoRegular($blue, 18px);
         cursor: pointer;
+
+        &:hover {
+          border-color: $secondaryBlue;
+          @include RobotoRegular($secondaryBlue, 18px);
+        }
       }
     }
   }

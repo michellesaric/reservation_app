@@ -29,7 +29,7 @@ const ApartmentCard = () => {
             onClick={handleExpandDetails}
             className="apartment-card__button"
           >
-            {areDetailsExpanded ? "Subtract" : "Expand"}
+            {areDetailsExpanded ? "Hide details" : "Show details"}
           </button>
         </div>
       </div>

@@ -1,7 +1,14 @@
 import React from "react";
+import NavBar from "../../components/navbar/NavBar";
+import Footer from "../../components/footer/Footer";
 
 const Reservation = () => {
-  return <div>Reservation</div>;
+  return (
+    <>
+      <NavBar />
+      <Footer />
+    </>
+  );
 };
 
 export default Reservation;

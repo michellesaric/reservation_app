@@ -1,1 +1,6 @@
+@import "../../styles/layout";
 
+.nav-bar-search-bar__wrapper {
+  position: relative;
+  @include FlexCenterHorizontal;
+}

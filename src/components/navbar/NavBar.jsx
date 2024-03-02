@@ -1,6 +1,5 @@
 import React from "react";
 import userIcon from "../../assets/UserIcon.png";
-import SearchBar from "../searchbar/SearchBar";
 
 const NavBar = () => {
   return (
@@ -9,8 +8,6 @@ const NavBar = () => {
         <h4 className="nav__logo">Apartments App</h4>
         <img src={userIcon} alt="user logo" className="nav__user-icon" />
       </div>
-
-      <SearchBar />
     </nav>
   );
 };
