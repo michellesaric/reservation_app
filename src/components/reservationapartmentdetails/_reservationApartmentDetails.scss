@@ -1,0 +1,38 @@
+@import "../../styles/fonts";
+@import "../../styles/layout";
+
+.reservation-apartment-details {
+  display: flex;
+  margin-bottom: 50px;
+
+  .reservation-apartment-details__image {
+    margin-right: 30px;
+    height: 300px;
+    width: auto;
+  }
+
+  .reservation-apartment-details__name-capacity-distance-amenities-wrapper {
+    .reservation-apartment-details__name {
+      @include RobotoBold($black, 28px);
+      margin-bottom: 30px;
+    }
+    .reservation-apartment-details__capacity,
+    .reservation-apartment-details__distance {
+      @include RobotoRegular($black, 20px);
+      margin-bottom: 10px;
+    }
+
+    .reservation-apartment-details__amenities {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+
+      .reservation-apartment-details__amenitie {
+        border: 1px solid $secondaryGray;
+        border-radius: 8px;
+        padding: 15px 50px 15px 15px;
+        @include RobotoMedium($black, 16px);
+      }
+    }
+  }
+}

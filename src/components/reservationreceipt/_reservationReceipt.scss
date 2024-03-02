@@ -1,0 +1,29 @@
+@import "../../styles/fonts";
+
+.reservation-receipt__table {
+  width: 100%;
+  border: 1px solid $black;
+  border-collapse: collapse;
+  margin-bottom: 32px;
+
+  .reservation-receipt__table-header {
+    background-color: $secondaryBlue;
+
+    .reservation-receipt__table-header-piece {
+      padding: 15px 0px;
+      @include RobotoMedium($white, 18px);
+      border: 1px solid $black;
+    }
+  }
+
+  .reservation-receipt__table-body {
+    background-color: $gray;
+
+    .reservation-receipt__table-body-piece {
+      padding: 15px 0px;
+      @include RobotoMedium($black, 18px);
+      border: 1px solid $black;
+      text-align: center;
+    }
+  }
+}

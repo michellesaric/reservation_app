@@ -4,6 +4,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 .nav {
   width: 100%;
   padding: 30px 0px 50px;
@@ -276,6 +279,131 @@
   font-style: normal;
   color: #ffffff;
   font-size: 24px;
+}
+
+.reservation__success {
+  width: 100%;
+  padding: 50px 0px;
+}
+.reservation__success .reservation__success-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #353535;
+  font-size: 40px;
+}
+.reservation__success .reservation__success-title .reservation__success-title-apartment {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #353535;
+  font-size: 40px;
+}
+
+.apartment-details__title,
+.reservation-details__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #353535;
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+
+.reservation__back-to-home-link .reservation__back-to-home-button {
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #003b95;
+  padding: 10px 70px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #ffffff;
+  font-size: 18px;
+  text-decoration: none;
+}
+.reservation__back-to-home-link .reservation__back-to-home-button:hover {
+  background-color: #006ce4;
+}
+
+.reservation-receipt__table {
+  width: 100%;
+  border: 1px solid #353535;
+  border-collapse: collapse;
+  margin-bottom: 32px;
+}
+.reservation-receipt__table .reservation-receipt__table-header {
+  background-color: #006ce4;
+}
+.reservation-receipt__table .reservation-receipt__table-header .reservation-receipt__table-header-piece {
+  padding: 15px 0px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #ffffff;
+  font-size: 18px;
+  border: 1px solid #353535;
+}
+.reservation-receipt__table .reservation-receipt__table-body {
+  background-color: #e8e8e8;
+}
+.reservation-receipt__table .reservation-receipt__table-body .reservation-receipt__table-body-piece {
+  padding: 15px 0px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #353535;
+  font-size: 18px;
+  border: 1px solid #353535;
+  text-align: center;
+}
+
+.reservation-apartment-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px;
+}
+.reservation-apartment-details .reservation-apartment-details__image {
+  margin-right: 30px;
+  height: 300px;
+  width: auto;
+}
+.reservation-apartment-details .reservation-apartment-details__name-capacity-distance-amenities-wrapper .reservation-apartment-details__name {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #353535;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+.reservation-apartment-details .reservation-apartment-details__name-capacity-distance-amenities-wrapper .reservation-apartment-details__capacity,
+.reservation-apartment-details .reservation-apartment-details__name-capacity-distance-amenities-wrapper .reservation-apartment-details__distance {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #353535;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.reservation-apartment-details .reservation-apartment-details__name-capacity-distance-amenities-wrapper .reservation-apartment-details__amenities {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+}
+.reservation-apartment-details .reservation-apartment-details__name-capacity-distance-amenities-wrapper .reservation-apartment-details__amenities .reservation-apartment-details__amenitie {
+  border: 1px solid #868e96;
+  border-radius: 8px;
+  padding: 15px 50px 15px 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #353535;
+  font-size: 16px;
 }
 
 * {

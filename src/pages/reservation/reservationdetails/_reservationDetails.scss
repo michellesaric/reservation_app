@@ -1,0 +1,37 @@
+@import "../../../styles/layout";
+@import "../../../styles/fonts";
+
+.reservation__success {
+  width: 100%;
+  padding: 50px 0px;
+
+  .reservation__success-title {
+    @include RobotoMedium($black, 40px);
+
+    .reservation__success-title-apartment {
+      @include RobotoBold($black, 40px);
+    }
+  }
+}
+
+.apartment-details__title,
+.reservation-details__title {
+  @include RobotoBold($black, 32px);
+  margin-bottom: 25px;
+}
+
+.reservation__back-to-home-link {
+  .reservation__back-to-home-button {
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: $blue;
+    padding: 10px 70px;
+    @include RobotoMedium($white, 18px);
+    text-decoration: none;
+
+    &:hover {
+      background-color: $secondaryBlue;
+    }
+  }
+}
