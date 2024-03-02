@@ -1,0 +1,49 @@
+@import "../../styles/fonts";
+@import "../../styles/layout";
+
+.apartment-details {
+  border-top: 1px solid $gray;
+  margin-top: 25px;
+
+  .apartment-details__amenities,
+  .apartment-details__availability {
+    margin: 10px 0px;
+    @include RobotoBold($black, 24px);
+  }
+
+  .apartment-details__amenities-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px;
+
+    .apartment-details__amenitie {
+      border: 1px solid $secondaryGray;
+      border-radius: 8px;
+      padding: 20px 130px 20px 20px;
+      @include RobotoMedium($black, 12px);
+    }
+  }
+
+  .apartment-details__availability-details {
+    @include FlexSpaceBetween;
+
+    .apartment-details__date,
+    .apartment-details__price {
+      @include RobotoMedium($black, 20px);
+    }
+
+    .apartment-details__button {
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      background-color: $blue;
+      padding: 10px 70px;
+      @include RobotoMedium($white, 18px);
+
+      &:hover {
+        background-color: $secondaryBlue;
+      }
+    }
+  }
+}

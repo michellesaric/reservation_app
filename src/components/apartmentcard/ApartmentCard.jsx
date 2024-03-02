@@ -1,7 +1,14 @@
-import React from "react";
+import { useState } from "react";
 import apartmentImage from "../../assets/apartment.png";
+import ApartmentDetails from "../apartmentdetails/ApartmentDetails";
 
 const ApartmentCard = () => {
+  const [areDetailsExpanded, setAreDetailsExpanded] = useState(false);
+
+  const handleExpandDetails = () => {
+    setAreDetailsExpanded(!areDetailsExpanded);
+  };
+
   return (
     <section className="apartment-card">
       <div className="apartment-card__wrapper">
@@ -18,9 +25,15 @@ const ApartmentCard = () => {
               Distance from the beach: 400m
             </p>
           </div>
-          <button className="apartment-card__button">Expand</button>
+          <button
+            onClick={handleExpandDetails}
+            className="apartment-card__button"
+          >
+            {areDetailsExpanded ? "Subtract" : "Expand"}
+          </button>
         </div>
       </div>
+      {areDetailsExpanded && <ApartmentDetails />}
     </section>
   );
 };
