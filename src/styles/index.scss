@@ -2,6 +2,9 @@
 @forward "./layout";
 @import "./variables";
 @import "../components/navbar/navBar";
+@import "../components/searchbar/searchBar";
+@import "../pages/home/apartmentslist/apartmentsList";
+@import "../components/apartmentcard/apartmentCard";
 
 * {
   margin: 0;

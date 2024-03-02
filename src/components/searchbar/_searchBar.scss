@@ -1,0 +1,40 @@
+@import "../../styles/fonts";
+
+.search-bar {
+  position: absolute;
+  bottom: -30px;
+  background-color: $yellow;
+  border-radius: 8px;
+  padding: 4px;
+  width: 1100px;
+  display: flex;
+
+  .search-bar__date,
+  .search-bar__person-number,
+  .search-bar__amenities {
+    padding: 16px;
+    margin-right: 4px;
+    border-radius: 4px;
+    background-color: $white;
+    width: 33%;
+    cursor: pointer;
+
+    p {
+      @include RobotoMedium($black, 14px);
+      line-height: 20px;
+    }
+  }
+
+  .search-bar__button {
+    border: none;
+    padding: 0px 24px;
+    border-radius: 4px;
+    background-color: $secondaryBlue;
+    @include RobotoMedium($white, 16px);
+    cursor: pointer;
+
+    &:hover {
+      background-color: $blue;
+    }
+  }
+}

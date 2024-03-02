@@ -1,0 +1,51 @@
+@import "../../styles//fonts";
+@import "../../styles/layout";
+
+.apartment-card {
+  width: 100%;
+  border: 1px solid $gray;
+  border-radius: 16px;
+  padding: 30px;
+  margin-bottom: 25px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .apartment-card__wrapper {
+    display: flex;
+
+    .apartment-card__image {
+      margin-right: 20px;
+      border-radius: 16px;
+    }
+
+    .apartment-card__text-content {
+      @include FlexSpaceBetweenColumn;
+
+      .apartment-card__title {
+        @include RobotoBold($black, 32px);
+      }
+
+      .apartment-card__capacity-distance-wrapper {
+        .apartment-card__capacity {
+          @include RobotoRegular($secondaryBlack, 20px);
+          margin-bottom: 10px;
+        }
+
+        .apartment-card__distance {
+          @include RobotoRegular($secondaryBlack, 20px);
+        }
+      }
+
+      .apartment-card__button {
+        border: 1px solid $blue;
+        background-color: transparent;
+        border-radius: 10px;
+        padding: 10px 25px;
+        @include RobotoRegular($blue, 18px);
+        cursor: pointer;
+      }
+    }
+  }
+}
