@@ -7,6 +7,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 .nav {
   width: 100%;
   padding: 30px 0px 50px;
@@ -60,6 +63,7 @@
 .search-bar .search-bar__date,
 .search-bar .search-bar__person-number,
 .search-bar .search-bar__amenities {
+  position: relative;
   padding: 16px;
   margin-right: 4px;
   border-radius: 4px;
@@ -115,6 +119,18 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.error {
+  width: 100%;
+  padding: 100px 0px 0px 50px;
+}
+.error .error__text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #353535;
+  font-size: 48px;
 }
 
 .apartment-card {
@@ -404,6 +420,150 @@
   font-style: normal;
   color: #353535;
   font-size: 16px;
+}
+
+.amenities-modal {
+  position: absolute;
+  right: 0;
+  top: 70px;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+.amenities-modal .amenities-modal__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+.amenities-modal .amenities-modal__column .amenities-modal__column-amenitie {
+  width: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.amenities-modal .amenities-modal__column .amenities-modal__column-amenitie label {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #353535;
+  font-size: 18px;
+}
+.amenities-modal .amenities-modal__column .amenities-modal__column-amenitie input {
+  width: 15px;
+  height: 15px;
+}
+
+.people-modal {
+  position: absolute;
+  left: 0;
+  top: 70px;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #ffffff;
+  width: 300px;
+}
+.people-modal .people-modal__counter-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+.people-modal .people-modal__counter-wrapper .people-modal__adults {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #353535;
+  font-size: 16px;
+  margin-right: 20px;
+}
+.people-modal .people-modal__counter-wrapper .people-modal__counter-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  padding: 5px;
+}
+.people-modal .people-modal__counter-wrapper .people-modal__counter-icons .people-modal__minus-icon {
+  margin-right: 15px;
+  cursor: pointer;
+}
+.people-modal .people-modal__counter-wrapper .people-modal__counter-icons .people-modal__counter {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #353535;
+  font-size: 16px;
+  margin-right: 15px;
+}
+.people-modal .people-modal__counter-wrapper .people-modal__counter-icons .people-modal__plus-icon {
+  cursor: pointer;
+}
+.people-modal .people-modal__button {
+  background-color: white;
+  border: 1px solid #003b95;
+  border-radius: 4px;
+  padding: 10px 0px;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #003b95;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.date-modal {
+  position: absolute;
+  left: 0;
+  top: 70px;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #ffffff;
+}
+.date-modal .rdrDefinedRangesWrapper {
+  display: none;
+}
+.date-modal .date-modal__button {
+  background-color: white;
+  border: 1px solid #003b95;
+  border-radius: 4px;
+  padding: 10px 0px;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #003b95;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 15px;
 }
 
 * {

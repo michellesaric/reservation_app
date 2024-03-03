@@ -1,16 +1,48 @@
-import React from "react";
+import { useState } from "react";
+import AmenitiesModal from "../amenitiesmodal/AmenitiesModal";
+import PeopleModal from "../peoplemodal/PeopleModal";
+import DateModal from "../datemodal/DateModal";
 
 const SearchBar = () => {
+  const [isAmenitiesModalOpen, setIsAmenitiesModalOpen] = useState(false);
+  const [isPeopleModalOpen, setIsPeopleModalOpen] = useState(false);
+  const [isDateModalOpen, setIsDateModalOpen] = useState(false);
+
+  const handleShowAmenitiesModal = () => {
+    setIsAmenitiesModalOpen(!isAmenitiesModalOpen);
+    setIsPeopleModalOpen(false);
+    setIsDateModalOpen(false);
+  };
+
+  const handleShowPeopleModal = () => {
+    setIsPeopleModalOpen(!isPeopleModalOpen);
+    setIsAmenitiesModalOpen(false);
+    setIsDateModalOpen(false);
+  };
+
+  const handleShowDateModal = () => {
+    setIsDateModalOpen(!isDateModalOpen);
+    setIsAmenitiesModalOpen(false);
+    setIsPeopleModalOpen(false);
+  };
+
   return (
     <div className="search-bar">
       <div className="search-bar__date">
-        <p>12 Feb - 14 Feb</p>
+        <p onClick={handleShowDateModal}>12 Feb - 14 Feb</p>
+        {isDateModalOpen && (
+          <DateModal handleShowDateModal={handleShowDateModal} />
+        )}
       </div>
       <div className="search-bar__person-number">
-        <p>2 people</p>
+        <p onClick={handleShowPeopleModal}>2 people</p>
+        {isPeopleModalOpen && (
+          <PeopleModal handleShowPeopleModal={handleShowPeopleModal} />
+        )}
       </div>
       <div className="search-bar__amenities">
-        <p>Amenities</p>
+        <p onClick={handleShowAmenitiesModal}>Amenities</p>
+        {isAmenitiesModalOpen && <AmenitiesModal />}
       </div>
       <button className="search-bar__button">Search</button>
     </div>

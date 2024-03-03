@@ -5,13 +5,16 @@
 @import "../components/searchbar/searchBar";
 @import "../pages/home/apartmentslist/apartmentsList";
 @import "../pages/home/home";
+@import "../pages/error/error";
 @import "../components/apartmentcard/apartmentCard";
 @import "../components/apartmentdetails/apartmentDetails";
 @import "../components/footer/footer";
 @import "../pages/reservation/reservationdetails/reservationDetails";
 @import "../components/reservationreceipt/reservationReceipt";
 @import "../components/reservationapartmentdetails/reservationApartmentDetails";
-
+@import "../components/amenitiesmodal/amenitiesModal";
+@import "../components/peoplemodal/peopleModal";
+@import "../components/datemodal/dateModal";
 * {
   margin: 0;
   padding: 0;

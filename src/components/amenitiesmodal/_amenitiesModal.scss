@@ -1,0 +1,33 @@
+@import "../../styles/layout";
+@import "../../styles/fonts";
+
+.amenities-modal {
+  position: absolute;
+  right: 0;
+  top: 70px;
+  border: 1px solid $gray;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: $white;
+  display: flex;
+  gap: 15px;
+
+  .amenities-modal__column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .amenities-modal__column-amenitie {
+      width: 170px;
+      @include FlexSpaceBetween;
+    }
+
+    .amenities-modal__column-amenitie label {
+      @include RobotoRegular($black, 18px);
+    }
+
+    .amenities-modal__column-amenitie input {
+      width: 15px;
+      height: 15px;
+    }
+  }
+}

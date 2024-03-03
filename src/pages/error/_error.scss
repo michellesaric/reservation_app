@@ -1,0 +1,10 @@
+@import "../../styles/fonts";
+
+.error {
+  width: 100%;
+  padding: 100px 0px 0px 50px;
+
+  .error__text {
+    @include RobotoBold($black, 48px);
+  }
+}
