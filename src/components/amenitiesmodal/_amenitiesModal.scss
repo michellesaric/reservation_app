@@ -10,38 +10,27 @@
   padding: 15px;
   background-color: $white;
   display: flex;
+  flex-direction: column;
   gap: 15px;
 
-  .amenities-modal__column {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    .amenities-modal__column-amenitie {
-      width: 170px;
-      @include FlexSpaceBetween;
-    }
+  .amenities-modal__column-amenitie {
+    width: 170px;
+    @include FlexSpaceBetween;
+  }
 
-    .amenities-modal__column-amenitie label {
-      @include RobotoRegular($black, 18px);
-    }
+  .amenities-modal__column-amenitie label {
+    @include RobotoRegular($black, 18px);
+  }
 
-    .amenities-modal__column-amenitie input {
-      width: 15px;
-      height: 15px;
-    }
+  .amenities-modal__column-amenitie input {
+    width: 15px;
+    height: 15px;
   }
 }
 
 @media screen and (max-width: 800px) {
   .amenities-modal {
     left: 0;
-    width: 400px;
-  }
-}
-
-@media screen and (max-width: 445px) {
-  .amenities-modal {
     width: 210px;
-    flex-direction: column;
   }
 }

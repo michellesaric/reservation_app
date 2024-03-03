@@ -1,12 +1,16 @@
 import { useState, useEffect } from "react";
 import { DateRangePicker } from "react-date-range";
-import "react-date-range/dist/styles.css"; // main style file
-import "react-date-range/dist/theme/default.css"; // theme css file
+import "react-date-range/dist/styles.css";
+import "react-date-range/dist/theme/default.css";
 
-const DateModal = ({ handleToggleOpenedModal }) => {
+const DateModal = ({
+  handleToggleOpenedModal,
+  searchDetails,
+  setSearchDetails,
+}) => {
   const [selectionRange, setSelectionRange] = useState({
-    startDate: new Date(),
-    endDate: new Date(),
+    startDate: searchDetails.startingDate,
+    endDate: searchDetails.endingDate,
     key: "selection",
   });
 
@@ -31,6 +35,19 @@ const DateModal = ({ handleToggleOpenedModal }) => {
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  useEffect(() => {
+    const handleSavingDate = () => {
+      setSearchDetails({
+        ...searchDetails,
+        startingDate: selectionRange.startDate,
+        endingDate: selectionRange.endDate,
+      });
+    };
+
+    handleSavingDate();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [selectionRange.startDate, selectionRange.endDate]);
 
   const minDate = new Date(2024, 2, 1);
 

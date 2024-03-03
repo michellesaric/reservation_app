@@ -1,38 +1,41 @@
-const AmenitiesModal = () => {
+import { useState } from "react";
+import { amenities } from "./const";
+import { convertToCamelCase } from "../../utils/convertToCamelCase";
+
+const AmenitiesModal = ({ searchDetails, setSearchDetails }) => {
+  const [amenitiesState, setAmenitiesState] = useState(searchDetails.amenities);
+
+  const handleCheckboxChange = (event) => {
+    const { name, checked } = event.target;
+    setAmenitiesState((prevState) => ({
+      ...prevState,
+      [name]: checked,
+    }));
+    setSearchDetails((prevDetails) => ({
+      ...prevDetails,
+      amenities: {
+        ...prevDetails.amenities,
+        [name]: checked,
+      },
+    }));
+  };
+
   return (
     <section className="amenities-modal">
-      <div className="amenities-modal__column">
-        <div className="amenities-modal__column-amenitie">
-          <label>Air Conditioning</label>
-          <input
-            type="checkbox"
-            id="air conditioning"
-            name="air conditioning"
-          />
-        </div>
-        <div className="amenities-modal__column-amenitie">
-          <label>Free Parking</label>
-          <input type="checkbox" id="free parking" name="free parking" />
-        </div>
-        <div className="amenities-modal__column-amenitie">
-          <label>Pets Allowed</label>
-          <input type="checkbox" id="pets allowed" name="pets allowed" />
-        </div>
-      </div>
-      <div className="amenities-modal__column">
-        <div className="amenities-modal__column-amenitie">
-          <label>Swimming Pool</label>
-          <input type="checkbox" id="swimming pool" name="swimming pool" />
-        </div>
-        <div className="amenities-modal__column-amenitie">
-          <label>Free Wifi</label>
-          <input type="checkbox" id="free wifi" name="free wifi" />
-        </div>
-        <div className="amenities-modal__column-amenitie">
-          <label>Flat Tv</label>
-          <input type="checkbox" id="flat tv" name="flat tv" />
-        </div>
-      </div>
+      {amenities.map((amenitie) => {
+        return (
+          <div className="amenities-modal__column-amenitie" key={amenitie}>
+            <label>{amenitie}</label>
+            <input
+              type="checkbox"
+              id={convertToCamelCase(amenitie)}
+              name={convertToCamelCase(amenitie)}
+              checked={amenitiesState[convertToCamelCase(amenitie)]}
+              onChange={handleCheckboxChange}
+            />
+          </div>
+        );
+      })}
     </section>
   );
 };

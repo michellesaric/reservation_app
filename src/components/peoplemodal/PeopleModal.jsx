@@ -1,13 +1,26 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import MinusIcon from "../../assets/MinusIcon.png";
 import PlusIcon from "../../assets/PlusIcon.png";
 
-const PeopleModal = ({ handleToggleOpenedModal }) => {
-  const [counter, setCounter] = useState(2);
+const PeopleModal = ({
+  handleToggleOpenedModal,
+  searchDetails,
+  setSearchDetails,
+}) => {
+  const [counter, setCounter] = useState(searchDetails.people);
 
   const handleCount = (increment) => {
     setCounter((prev) => Math.max(1, prev + increment));
   };
+
+  useEffect(() => {
+    const handleSavingPeople = () => {
+      setSearchDetails({ ...searchDetails, people: counter });
+    };
+
+    handleSavingPeople();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [counter]);
 
   return (
     <section className="people-modal">

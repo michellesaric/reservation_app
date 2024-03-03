@@ -604,19 +604,13 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 15px;
-}
-.amenities-modal .amenities-modal__column {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 20px;
+  gap: 15px;
 }
-.amenities-modal .amenities-modal__column .amenities-modal__column-amenitie {
+.amenities-modal .amenities-modal__column-amenitie {
   width: 170px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -628,14 +622,14 @@
       -ms-flex-align: center;
           align-items: center;
 }
-.amenities-modal .amenities-modal__column .amenities-modal__column-amenitie label {
+.amenities-modal .amenities-modal__column-amenitie label {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #353535;
   font-size: 18px;
 }
-.amenities-modal .amenities-modal__column .amenities-modal__column-amenitie input {
+.amenities-modal .amenities-modal__column-amenitie input {
   width: 15px;
   height: 15px;
 }
@@ -643,16 +637,7 @@
 @media screen and (max-width: 800px) {
   .amenities-modal {
     left: 0;
-    width: 400px;
-  }
-}
-@media screen and (max-width: 445px) {
-  .amenities-modal {
     width: 210px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
 }
 .people-modal {
