@@ -1,48 +1,41 @@
 import { useState } from "react";
+import { ModalTypes } from "./const";
 import AmenitiesModal from "../AmenitiesModal/AmenitiesModal";
 import PeopleModal from "../PeopleModal/PeopleModal";
 import DateModal from "../DateModal/DateModal";
 
 const SearchBar = () => {
-  const [isAmenitiesModalOpen, setIsAmenitiesModalOpen] = useState(false);
-  const [isPeopleModalOpen, setIsPeopleModalOpen] = useState(false);
-  const [isDateModalOpen, setIsDateModalOpen] = useState(false);
+  const [currentOpenedModal, setCurrentOpenedModal] = useState(null);
 
-  const handleShowAmenitiesModal = () => {
-    setIsAmenitiesModalOpen(!isAmenitiesModalOpen);
-    setIsPeopleModalOpen(false);
-    setIsDateModalOpen(false);
-  };
-
-  const handleShowPeopleModal = () => {
-    setIsPeopleModalOpen(!isPeopleModalOpen);
-    setIsAmenitiesModalOpen(false);
-    setIsDateModalOpen(false);
-  };
-
-  const handleShowDateModal = () => {
-    setIsDateModalOpen(!isDateModalOpen);
-    setIsAmenitiesModalOpen(false);
-    setIsPeopleModalOpen(false);
+  const handleToggleOpenedModal = (modalToToggle) => {
+    setCurrentOpenedModal((prev) =>
+      prev === modalToToggle ? null : modalToToggle
+    );
   };
 
   return (
     <div className="search-bar">
       <div className="search-bar__date">
-        <p onClick={handleShowDateModal}>12 Feb - 14 Feb</p>
-        {isDateModalOpen && (
-          <DateModal handleShowDateModal={handleShowDateModal} />
+        <p onClick={() => handleToggleOpenedModal(ModalTypes.DATE)}>
+          03 Feb - 04 Feb
+        </p>
+        {currentOpenedModal === ModalTypes.DATE && (
+          <DateModal handleToggleOpenedModal={handleToggleOpenedModal} />
         )}
       </div>
       <div className="search-bar__person-number">
-        <p onClick={handleShowPeopleModal}>2 people</p>
-        {isPeopleModalOpen && (
-          <PeopleModal handleShowPeopleModal={handleShowPeopleModal} />
+        <p onClick={() => handleToggleOpenedModal(ModalTypes.PEOPLE)}>
+          2 Adults
+        </p>
+        {currentOpenedModal === ModalTypes.PEOPLE && (
+          <PeopleModal handleToggleOpenedModal={handleToggleOpenedModal} />
         )}
       </div>
       <div className="search-bar__amenities">
-        <p onClick={handleShowAmenitiesModal}>Amenities</p>
-        {isAmenitiesModalOpen && <AmenitiesModal />}
+        <p onClick={() => handleToggleOpenedModal(ModalTypes.AMENITIES)}>
+          Amenities
+        </p>
+        {currentOpenedModal === ModalTypes.AMENITIES && <AmenitiesModal />}
       </div>
       <button className="search-bar__button">Search</button>
     </div>

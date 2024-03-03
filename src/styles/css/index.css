@@ -88,7 +88,6 @@
 .search-bar .search-bar__person-number,
 .search-bar .search-bar__amenities {
   position: relative;
-  padding: 16px;
   margin-right: 4px;
   border-radius: 4px;
   background-color: #ffffff;
@@ -98,6 +97,8 @@
 .search-bar .search-bar__date p,
 .search-bar .search-bar__person-number p,
 .search-bar .search-bar__amenities p {
+  padding: 16px;
+  border: none;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;

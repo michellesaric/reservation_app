@@ -2,7 +2,7 @@ import { useState } from "react";
 import MinusIcon from "../../assets/MinusIcon.png";
 import PlusIcon from "../../assets/PlusIcon.png";
 
-const PeopleModal = ({ handleShowPeopleModal }) => {
+const PeopleModal = ({ handleToggleOpenedModal }) => {
   const [counter, setCounter] = useState(2);
 
   const handleCount = (increment) => {
@@ -29,7 +29,10 @@ const PeopleModal = ({ handleShowPeopleModal }) => {
           />
         </div>
       </div>
-      <button className="people-modal__button" onClick={handleShowPeopleModal}>
+      <button
+        className="people-modal__button"
+        onClick={() => handleToggleOpenedModal("people")}
+      >
         Done
       </button>
     </section>

@@ -3,7 +3,7 @@ import { DateRangePicker } from "react-date-range";
 import "react-date-range/dist/styles.css"; // main style file
 import "react-date-range/dist/theme/default.css"; // theme css file
 
-const DateModal = ({ handleShowDateModal }) => {
+const DateModal = ({ handleToggleOpenedModal }) => {
   const [selectionRange, setSelectionRange] = useState({
     startDate: new Date(),
     endDate: new Date(),
@@ -46,7 +46,10 @@ const DateModal = ({ handleShowDateModal }) => {
         inputRanges={[]}
         rangeColors={["#003b95"]}
       />
-      <button className="date-modal__button" onClick={handleShowDateModal}>
+      <button
+        className="date-modal__button"
+        onClick={() => handleToggleOpenedModal("date")}
+      >
         Done
       </button>
     </div>
