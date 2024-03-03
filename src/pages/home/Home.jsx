@@ -1,8 +1,7 @@
-import React from "react";
-import NavBar from "../../components/navbar/NavBar";
+import NavBar from "../../components/NavBar/NavBar";
 import ApartmentsList from "./apartmentslist/ApartmentsList";
-import Footer from "../../components/footer/Footer";
-import SearchBar from "../../components/searchbar/SearchBar";
+import Footer from "../../components/Footer/Footer";
+import SearchBar from "../../components/SearchBar/SearchBar";
 
 const Home = () => {
   return (

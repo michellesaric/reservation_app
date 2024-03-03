@@ -1,5 +1,3 @@
-import React from "react";
-
 const ReservationReceipt = () => {
   return (
     <table className="reservation-receipt__table">

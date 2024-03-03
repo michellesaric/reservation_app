@@ -1,4 +1,3 @@
-import React from "react";
 import apartmentImage from "../../assets/apartment.png";
 
 const ReservationApartmentDetails = () => {

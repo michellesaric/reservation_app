@@ -1,5 +1,4 @@
-import React from "react";
-import ApartmentCard from "../../../components/apartmentcard/ApartmentCard";
+import ApartmentCard from "../../../components/ApartmentCard/ApartmentCard";
 
 const ApartmentsList = () => {
   return (

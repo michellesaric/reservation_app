@@ -5,15 +5,10 @@ import PlusIcon from "../../assets/PlusIcon.png";
 const PeopleModal = ({ handleShowPeopleModal }) => {
   const [counter, setCounter] = useState(2);
 
-  const handleIncreaseCounter = () => {
-    setCounter(counter + 1);
+  const handleCount = (increment) => {
+    setCounter((prev) => Math.max(1, prev + increment));
   };
-  const handleDecreaseCounter = () => {
-    if (counter === 1) {
-      return;
-    }
-    setCounter(counter - 1);
-  };
+
   return (
     <section className="people-modal">
       <div className="people-modal__counter-wrapper">
@@ -23,14 +18,14 @@ const PeopleModal = ({ handleShowPeopleModal }) => {
             src={MinusIcon}
             alt="minus"
             className="people-modal__minus-icon"
-            onClick={handleDecreaseCounter}
+            onClick={() => handleCount(-1)}
           />
           <p className="people-modal__counter">{counter}</p>
           <img
             src={PlusIcon}
             alt="plus"
             className="people-modal__plus-icon"
-            onClick={handleIncreaseCounter}
+            onClick={() => handleCount(1)}
           />
         </div>
       </div>

@@ -1,5 +1,3 @@
-import React from "react";
-
 const AmenitiesModal = () => {
   return (
     <section className="amenities-modal">

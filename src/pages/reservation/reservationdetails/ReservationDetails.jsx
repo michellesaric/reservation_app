@@ -1,6 +1,5 @@
-import React from "react";
-import ReservationApartmentDetails from "../../../components/reservationapartmentdetails/ReservationApartmentDetails";
-import ReservationReceipt from "../../../components/reservationreceipt/ReservationReceipt";
+import ReservationApartmentDetails from "../../../components/ReservationApartmentDetails/ReservationApartmentDetails";
+import ReservationReceipt from "../../../components/ReservationReceipt/ReservationReceipt";
 import { Link } from "react-router-dom";
 
 const ReservationDetails = () => {

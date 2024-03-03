@@ -1,6 +1,6 @@
 import { useState } from "react";
 import apartmentImage from "../../assets/apartment.png";
-import ApartmentDetails from "../apartmentdetails/ApartmentDetails";
+import ApartmentDetails from "../ApartmentDetails/ApartmentDetails";
 
 const ApartmentCard = () => {
   const [areDetailsExpanded, setAreDetailsExpanded] = useState(false);

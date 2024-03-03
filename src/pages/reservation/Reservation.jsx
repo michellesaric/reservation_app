@@ -1,7 +1,6 @@
-import React from "react";
-import NavBar from "../../components/navbar/NavBar";
+import NavBar from "../../components/NavBar/NavBar";
 import ReservationDetails from "./reservationdetails/ReservationDetails";
-import Footer from "../../components/footer/Footer";
+import Footer from "../../components/Footer/Footer";
 
 const Reservation = () => {
   return (

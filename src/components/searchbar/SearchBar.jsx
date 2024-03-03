@@ -1,7 +1,7 @@
 import { useState } from "react";
-import AmenitiesModal from "../amenitiesmodal/AmenitiesModal";
-import PeopleModal from "../peoplemodal/PeopleModal";
-import DateModal from "../datemodal/DateModal";
+import AmenitiesModal from "../AmenitiesModal/AmenitiesModal";
+import PeopleModal from "../PeopleModal/PeopleModal";
+import DateModal from "../DateModal/DateModal";
 
 const SearchBar = () => {
   const [isAmenitiesModalOpen, setIsAmenitiesModalOpen] = useState(false);
