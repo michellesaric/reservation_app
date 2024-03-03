@@ -36,3 +36,14 @@
     }
   }
 }
+
+@media screen and (max-width: 680px) {
+  .reservation-apartment-details {
+    flex-direction: column;
+
+    .reservation-apartment-details__image {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

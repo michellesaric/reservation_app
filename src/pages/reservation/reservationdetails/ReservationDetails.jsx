@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const ReservationDetails = () => {
   return (
-    <main className="main">
+    <main className="main main-reservation">
       <div className="main__wrapper">
         <div className="reservation__success">
           <p className="reservation__success-title">

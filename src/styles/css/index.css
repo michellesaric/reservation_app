@@ -49,6 +49,30 @@
   height: 40px;
 }
 
+@media screen and (max-width: 1150px) {
+  .nav .nav__wrapper {
+    width: 100%;
+    padding: 0px 20px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .nav {
+    padding: 20px 0px 40px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .nav .nav__wrapper .nav__logo {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #ffffff;
+    font-size: 20px;
+  }
+  .nav .nav__wrapper .nav__user-icon {
+    width: 30px;
+    height: 30px;
+  }
+}
 .search-bar {
   position: absolute;
   bottom: -30px;
@@ -97,6 +121,36 @@
   background-color: #003b95;
 }
 
+@media screen and (max-width: 1150px) {
+  .search-bar {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .search-bar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 4px;
+    top: 75px;
+    height: 227px;
+  }
+  .search-bar .search-bar__date,
+  .search-bar .search-bar__person-number,
+  .search-bar .search-bar__amenities {
+    width: 100%;
+    margin-right: 0;
+  }
+  .search-bar .search-bar__button {
+    padding: 16px 0px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .search-bar {
+    top: 65px;
+  }
+}
 .main {
   padding: 60px 0px;
   width: 100%;
@@ -111,6 +165,16 @@
   width: 1100px;
 }
 
+@media screen and (max-width: 1150px) {
+  .main .main__wrapper {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .main {
+    padding-top: 230px;
+  }
+}
 .nav-bar-search-bar__wrapper {
   position: relative;
   display: -webkit-box;
@@ -207,6 +271,54 @@
   font-size: 18px;
 }
 
+@media screen and (max-width: 680px) {
+  .apartment-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .apartment-card .apartment-card__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .apartment-card .apartment-card__wrapper .apartment-card__image {
+    width: 300px;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  .apartment-card .apartment-card__wrapper .apartment-card__text-content .apartment-card__title {
+    margin-bottom: 7px;
+  }
+  .apartment-card .apartment-card__wrapper .apartment-card__text-content .apartment-card__capacity-distance-wrapper .apartment-card__distance {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .apartment-card .apartment-card__wrapper .apartment-card__image {
+    width: 250px;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  .apartment-card .apartment-card__wrapper .apartment-card__text-content .apartment-card__title {
+    font-size: 24px;
+  }
+  .apartment-card .apartment-card__wrapper .apartment-card__text-content .apartment-card__capacity-distance-wrapper .apartment-card__capacity,
+  .apartment-card .apartment-card__wrapper .apartment-card__text-content .apartment-card__capacity-distance-wrapper .apartment-card__distance {
+    font-size: 14px;
+  }
+  .apartment-card .apartment-card__wrapper .apartment-card__text-content .apartment-card__button {
+    width: 100%;
+  }
+}
 .apartment-details {
   border-top: 1px solid #868e96;
   margin-top: 25px;
@@ -275,6 +387,18 @@
   background-color: #006ce4;
 }
 
+@media screen and (max-width: 680px) {
+  .apartment-details .apartment-details__availability-details {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 15px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
 .footer {
   background-color: #003b95;
   width: 100%;
@@ -297,6 +421,20 @@
   font-size: 24px;
 }
 
+@media screen and (max-width: 1150px) {
+  .footer .footer__wrapper {
+    width: 100%;
+    padding: 30px 30px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .footer .footer__wrapper {
+    padding: 20px 20px;
+  }
+  .footer .footer__wrapper .footer__text {
+    font-size: 14px;
+  }
+}
 .reservation__success {
   width: 100%;
   padding: 50px 0px;
@@ -343,6 +481,16 @@
   background-color: #006ce4;
 }
 
+@media screen and (max-width: 800px) {
+  .main-reservation {
+    padding-top: 60px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .main-reservation {
+    padding: 30px 20px;
+  }
+}
 .reservation-receipt__table {
   width: 100%;
   border: 1px solid #353535;
@@ -375,6 +523,16 @@
   text-align: center;
 }
 
+@media screen and (max-width: 550px) {
+  .reservation-receipt__table .reservation-receipt__table-header .reservation-receipt__table-header-piece {
+    padding: 10px 0px;
+    font-size: 12px;
+  }
+  .reservation-receipt__table .reservation-receipt__table-body .reservation-receipt__table-body-piece {
+    padding: 10px 0px;
+    font-size: 12px;
+  }
+}
 .reservation-apartment-details {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -422,6 +580,18 @@
   font-size: 16px;
 }
 
+@media screen and (max-width: 680px) {
+  .reservation-apartment-details {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .reservation-apartment-details .reservation-apartment-details__image {
+    width: 100%;
+    height: auto;
+  }
+}
 .amenities-modal {
   position: absolute;
   right: 0;
@@ -469,8 +639,24 @@
   height: 15px;
 }
 
+@media screen and (max-width: 800px) {
+  .amenities-modal {
+    left: 0;
+    width: 400px;
+  }
+}
+@media screen and (max-width: 445px) {
+  .amenities-modal {
+    width: 210px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .people-modal {
   position: absolute;
+  z-index: 3;
   left: 0;
   top: 70px;
   border: 1px solid #e8e8e8;
@@ -541,6 +727,7 @@
 
 .date-modal {
   position: absolute;
+  z-index: 3;
   left: 0;
   top: 70px;
   border: 1px solid #e8e8e8;

@@ -54,3 +54,59 @@
     }
   }
 }
+
+@media screen and (max-width: 680px) {
+  .apartment-card {
+    @include FlexCenterHorizontalColumn;
+    .apartment-card__wrapper {
+      flex-direction: column;
+
+      .apartment-card__image {
+        width: 300px;
+        height: auto;
+        margin-bottom: 15px;
+      }
+
+      .apartment-card__text-content {
+        .apartment-card__title {
+          margin-bottom: 7px;
+        }
+
+        .apartment-card__capacity-distance-wrapper {
+          .apartment-card__distance {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .apartment-card {
+    .apartment-card__wrapper {
+      .apartment-card__image {
+        width: 250px;
+        height: auto;
+        margin-bottom: 15px;
+      }
+
+      .apartment-card__text-content {
+        .apartment-card__title {
+          font-size: 24px;
+        }
+
+        .apartment-card__capacity-distance-wrapper {
+          .apartment-card__capacity,
+          .apartment-card__distance {
+            font-size: 14px;
+          }
+        }
+
+        .apartment-card__button {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

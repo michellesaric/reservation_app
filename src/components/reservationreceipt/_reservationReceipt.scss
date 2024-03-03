@@ -27,3 +27,21 @@
     }
   }
 }
+
+@media screen and (max-width: 550px) {
+  .reservation-receipt__table {
+    .reservation-receipt__table-header {
+      .reservation-receipt__table-header-piece {
+        padding: 10px 0px;
+        font-size: 12px;
+      }
+    }
+
+    .reservation-receipt__table-body {
+      .reservation-receipt__table-body-piece {
+        padding: 10px 0px;
+        font-size: 12px;
+      }
+    }
+  }
+}

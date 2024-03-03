@@ -21,3 +21,33 @@
     }
   }
 }
+
+@media screen and (max-width: 1150px) {
+  .nav {
+    .nav__wrapper {
+      width: 100%;
+      padding: 0px 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .nav {
+    padding: 20px 0px 40px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .nav {
+    .nav__wrapper {
+      .nav__logo {
+        @include RobotoMedium($white, 20px);
+      }
+
+      .nav__user-icon {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}

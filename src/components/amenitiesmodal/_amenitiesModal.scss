@@ -31,3 +31,17 @@
     }
   }
 }
+
+@media screen and (max-width: 800px) {
+  .amenities-modal {
+    left: 0;
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 445px) {
+  .amenities-modal {
+    width: 210px;
+    flex-direction: column;
+  }
+}

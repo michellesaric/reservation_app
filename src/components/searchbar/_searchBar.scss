@@ -39,3 +39,35 @@
     }
   }
 }
+
+@media screen and (max-width: 1150px) {
+  .search-bar {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .search-bar {
+    flex-direction: column;
+    gap: 4px;
+    top: 75px;
+    height: 227px;
+
+    .search-bar__date,
+    .search-bar__person-number,
+    .search-bar__amenities {
+      width: 100%;
+      margin-right: 0;
+    }
+
+    .search-bar__button {
+      padding: 16px 0px;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .search-bar {
+    top: 65px;
+  }
+}

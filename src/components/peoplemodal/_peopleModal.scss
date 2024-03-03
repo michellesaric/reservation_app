@@ -3,6 +3,7 @@
 
 .people-modal {
   position: absolute;
+  z-index: 3;
   left: 0;
   top: 70px;
   border: 1px solid $gray;
