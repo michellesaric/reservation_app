@@ -1,8 +1,21 @@
+import { useContext } from "react";
+import { FilterContext } from "../../../context/FilterContext";
 import ReservationApartmentDetails from "../../../components/ReservationApartmentDetails/ReservationApartmentDetails";
 import ReservationReceipt from "../../../components/ReservationReceipt/ReservationReceipt";
 import { Link } from "react-router-dom";
 
-const ReservationDetails = ({ apartment }) => {
+const ReservationDetails = () => {
+  const { filterDetails, setFilterDetails } = useContext(FilterContext);
+
+  const handleResetFilterDetails = () => {
+    setFilterDetails({
+      ...filterDetails,
+      startingDate: null,
+      endingDate: null,
+      people: null,
+      amenities: null,
+    });
+  };
   return (
     <main className="main main-reservation">
       <div className="main__wrapper">
@@ -15,11 +28,14 @@ const ReservationDetails = ({ apartment }) => {
           </p>
         </div>
         <p className="apartment-details__title">Apartment Details</p>
-        <ReservationApartmentDetails apartment={apartment} />
+        <ReservationApartmentDetails />
         <p className="reservation-details__title">Reservation Details</p>
-        <ReservationReceipt apartment={apartment} />
+        <ReservationReceipt />
         <Link to="/" className="reservation__back-to-home-link">
-          <button className="reservation__back-to-home-button">
+          <button
+            className="reservation__back-to-home-button"
+            onClick={handleResetFilterDetails}
+          >
             Go back to home page
           </button>
         </Link>

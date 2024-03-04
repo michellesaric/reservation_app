@@ -1,4 +1,8 @@
-const ReservationApartmentDetails = ({ apartment }) => {
+import { useContext } from "react";
+import { ApartmentContext } from "../../context/ApartmentContext";
+
+const ReservationApartmentDetails = () => {
+  const { apartment } = useContext(ApartmentContext);
   return (
     <section className="reservation-apartment-details">
       <img

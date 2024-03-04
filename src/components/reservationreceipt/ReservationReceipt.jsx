@@ -1,4 +1,8 @@
-const ReservationReceipt = ({ apartment }) => {
+import { useContext } from "react";
+import { ApartmentContext } from "../../context/ApartmentContext";
+
+const ReservationReceipt = () => {
+  const { apartment } = useContext(ApartmentContext);
   return (
     <table className="reservation-receipt__table">
       <thead className="reservation-receipt__table-header">

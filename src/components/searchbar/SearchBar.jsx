@@ -32,6 +32,7 @@ const SearchBar = () => {
 
   const handleSearch = () => {
     setFilterDetails(searchDetails);
+    setCurrentOpenedModal((prev) => prev === null);
   };
 
   return (
