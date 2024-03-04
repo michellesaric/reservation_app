@@ -1,6 +1,6 @@
-import NavBar from "../../components/NavBar/NavBar";
+import NavBar from "../../components/navBar/NavBar";
 import ReservationDetails from "./reservationdetails/ReservationDetails";
-import Footer from "../../components/Footer/Footer";
+import Footer from "../../components/footer/Footer";
 
 const Reservation = () => {
   return (

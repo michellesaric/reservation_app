@@ -3,9 +3,9 @@ import { FilterContext } from "../../context/FilterContext";
 import { ModalTypes } from "./const";
 import { tomorrowDate } from "../../utils/tomorrowDate";
 import { dateFormatter } from "../../utils/dateFormatter";
-import AmenitiesModal from "../AmenitiesModal/AmenitiesModal";
-import PeopleModal from "../PeopleModal/PeopleModal";
-import DateModal from "../DateModal/DateModal";
+import AmenitiesModal from "../amenitiesModal/AmenitiesModal";
+import PeopleModal from "../peopleModal/PeopleModal";
+import DateModal from "../dateModal/DateModal";
 
 const SearchBar = () => {
   const { setFilterDetails } = useContext(FilterContext);

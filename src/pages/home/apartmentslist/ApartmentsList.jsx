@@ -1,6 +1,6 @@
 import { useEffect, useContext, useState } from "react";
 import { FilterContext } from "../../../context/FilterContext";
-import ApartmentCard from "../../../components/ApartmentCard/ApartmentCard";
+import ApartmentCard from "../../../components/apartmentCard/ApartmentCard";
 import { mapApartmentData } from "../../../api/map";
 import { filter } from "../../../utils/filter";
 

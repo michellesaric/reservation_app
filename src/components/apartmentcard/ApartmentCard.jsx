@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ApartmentDetails from "../ApartmentDetails/ApartmentDetails";
+import ApartmentDetails from "../apartmentDetails/ApartmentDetails";
 
 const ApartmentCard = ({ apartment }) => {
   const [areDetailsExpanded, setAreDetailsExpanded] = useState(false);
