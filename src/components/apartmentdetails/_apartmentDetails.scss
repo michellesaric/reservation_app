@@ -29,23 +29,26 @@
     @include FlexSpaceBetween;
 
     .apartment-details__date,
-    .apartment-details__price {
+    .apartment-details__price,
+    .apartment-details__no-date-warning {
       @include RobotoMedium($black, 20px);
     }
 
-    .apartment-details__link {
-      .apartment-details__button {
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        background-color: $blue;
-        padding: 10px 70px;
-        @include RobotoMedium($white, 18px);
-        text-decoration: none;
+    .apartment-details__no-date-warning {
+      max-width: 350px;
+    }
 
-        &:hover {
-          background-color: $secondaryBlue;
-        }
+    .apartment-details__button {
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      background-color: $blue;
+      padding: 10px 70px;
+      @include RobotoMedium($white, 18px);
+      text-decoration: none;
+
+      &:hover {
+        background-color: $secondaryBlue;
       }
     }
   }

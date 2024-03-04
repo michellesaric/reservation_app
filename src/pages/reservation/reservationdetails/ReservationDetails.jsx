@@ -2,7 +2,7 @@ import ReservationApartmentDetails from "../../../components/ReservationApartmen
 import ReservationReceipt from "../../../components/ReservationReceipt/ReservationReceipt";
 import { Link } from "react-router-dom";
 
-const ReservationDetails = () => {
+const ReservationDetails = ({ apartment }) => {
   return (
     <main className="main main-reservation">
       <div className="main__wrapper">
@@ -15,9 +15,9 @@ const ReservationDetails = () => {
           </p>
         </div>
         <p className="apartment-details__title">Apartment Details</p>
-        <ReservationApartmentDetails />
+        <ReservationApartmentDetails apartment={apartment} />
         <p className="reservation-details__title">Reservation Details</p>
-        <ReservationReceipt />
+        <ReservationReceipt apartment={apartment} />
         <Link to="/" className="reservation__back-to-home-link">
           <button className="reservation__back-to-home-button">
             Go back to home page

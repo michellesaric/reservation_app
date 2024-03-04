@@ -2,7 +2,7 @@ import { useState } from "react";
 import apartmentImage from "../../assets/apartment.png";
 import ApartmentDetails from "../ApartmentDetails/ApartmentDetails";
 
-const ApartmentCard = () => {
+const ApartmentCard = ({ apartment }) => {
   const [areDetailsExpanded, setAreDetailsExpanded] = useState(false);
 
   const handleExpandDetails = () => {
@@ -13,16 +13,20 @@ const ApartmentCard = () => {
     <section className="apartment-card">
       <div className="apartment-card__wrapper">
         <img
-          src={apartmentImage}
+          src={apartment.image}
           alt="apartment"
           className="apartment-card__image"
         />
         <div className="apartment-card__text-content">
-          <h2 className="apartment-card__title">Apartmani Sunčica</h2>
+          <h2 className="apartment-card__title"> {apartment.title}</h2>
           <div className="apartment-card__capacity-distance-wrapper">
-            <p className="apartment-card__capacity">Capacity: 8 people</p>
+            <p className="apartment-card__capacity">
+              Capacity: {apartment.capacity} people
+            </p>
             <p className="apartment-card__distance">
-              Distance from the beach: 400m
+              {apartment.beachDistanceInMeters === null
+                ? ""
+                : `Distance from the beach: ${apartment.beachDistanceInMeters}m`}
             </p>
           </div>
           <button
@@ -33,7 +37,7 @@ const ApartmentCard = () => {
           </button>
         </div>
       </div>
-      {areDetailsExpanded && <ApartmentDetails />}
+      {areDetailsExpanded && <ApartmentDetails apartment={apartment} />}
     </section>
   );
 };

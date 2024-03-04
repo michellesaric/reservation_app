@@ -1,39 +1,43 @@
-import apartmentImage from "../../assets/apartment.png";
-
-const ReservationApartmentDetails = () => {
+const ReservationApartmentDetails = ({ apartment }) => {
   return (
     <section className="reservation-apartment-details">
       <img
-        src={apartmentImage}
+        src={apartment.image}
         alt="apartment"
         className="reservation-apartment-details__image"
       />
       <div className="reservation-apartment-details__name-capacity-distance-amenities-wrapper">
         <h3 className="reservation-apartment-details__name">
-          Apartmani Sunčica
+          {apartment.title}
         </h3>
         <p className="reservation-apartment-details__capacity">
-          Capacity: 8 people
+          Capacity: {apartment.capacity} people
         </p>
         <p className="reservation-apartment-details__distance">
-          Distance from the beach: 400m
+          {apartment.beachDistanceInMeters === null
+            ? ""
+            : `Distance from the beach: ${apartment.beachDistanceInMeters}m`}
         </p>
         <div className="reservation-apartment-details__amenities">
-          <div className="reservation-apartment-details__amenitie">
-            Pets Allowed
-          </div>
-          <div className="reservation-apartment-details__amenitie">
-            Swimming Pool
-          </div>
-          <div className="reservation-apartment-details__amenitie">
-            Free Parking
-          </div>
-          <div className="reservation-apartment-details__amenitie">
-            Free Wifi
-          </div>
-          <div className="reservation-apartment-details__amenitie">
-            Free Wifi
-          </div>
+          {Object.entries(apartment.amenities).map(([amenity, value]) => {
+            if (value) {
+              const formattedAmenity = amenity
+                .replace(/([A-Z])/g, " $1")
+                .toLowerCase();
+              const capitalizedAmenity =
+                formattedAmenity.charAt(0).toUpperCase() +
+                formattedAmenity.slice(1);
+              return (
+                <div
+                  key={amenity}
+                  className="reservation-apartment-details__amenitie"
+                >
+                  {capitalizedAmenity}
+                </div>
+              );
+            }
+            return null;
+          })}
         </div>
       </div>
     </section>

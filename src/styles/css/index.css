@@ -364,14 +364,18 @@
           align-items: center;
 }
 .apartment-details .apartment-details__availability-details .apartment-details__date,
-.apartment-details .apartment-details__availability-details .apartment-details__price {
+.apartment-details .apartment-details__availability-details .apartment-details__price,
+.apartment-details .apartment-details__availability-details .apartment-details__no-date-warning {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
   color: #353535;
   font-size: 20px;
 }
-.apartment-details .apartment-details__availability-details .apartment-details__link .apartment-details__button {
+.apartment-details .apartment-details__availability-details .apartment-details__no-date-warning {
+  max-width: 350px;
+}
+.apartment-details .apartment-details__availability-details .apartment-details__button {
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -384,7 +388,7 @@
   font-size: 18px;
   text-decoration: none;
 }
-.apartment-details .apartment-details__availability-details .apartment-details__link .apartment-details__button:hover {
+.apartment-details .apartment-details__availability-details .apartment-details__button:hover {
   background-color: #006ce4;
 }
 

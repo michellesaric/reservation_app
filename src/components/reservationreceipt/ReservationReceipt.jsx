@@ -1,4 +1,4 @@
-const ReservationReceipt = () => {
+const ReservationReceipt = ({ apartment }) => {
   return (
     <table className="reservation-receipt__table">
       <thead className="reservation-receipt__table-header">
@@ -16,11 +16,17 @@ const ReservationReceipt = () => {
       <tbody className="reservation-receipt__table-body">
         <tr>
           <td className="reservation-receipt__table-body-piece">
-            14 Feb - 16 Feb
+            {apartment.date}
           </td>
-          <td className="reservation-receipt__table-body-piece">2</td>
-          <td className="reservation-receipt__table-body-piece">2</td>
-          <td className="reservation-receipt__table-body-piece">€ 134</td>
+          <td className="reservation-receipt__table-body-piece">
+            {apartment.numberOfNights}
+          </td>
+          <td className="reservation-receipt__table-body-piece">
+            {apartment.capacity}
+          </td>
+          <td className="reservation-receipt__table-body-piece">
+            € {apartment.totalPrice}
+          </td>
         </tr>
       </tbody>
     </table>
