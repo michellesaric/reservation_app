@@ -1,7 +1,7 @@
-import NavBar from "../../components/navBar/NavBar";
-import ApartmentsList from "./apartmentslist/ApartmentsList";
+import NavBar from "../../components/nav_bar/NavBar";
+import ApartmentsList from "./apartments_list/ApartmentsList";
 import Footer from "../../components/footer/Footer";
-import SearchBar from "../../components/searchBar/SearchBar";
+import SearchBar from "../../components/search_bar/SearchBar";
 
 const Home = () => {
   return (
