@@ -1,29 +1,29 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap";
 .nav {
   width: 100%;
-  padding: 30px 0px 50px;
+  padding: 30px 0 50px;
   background-color: #003b95;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 .nav .nav__wrapper {
   width: 1100px;
@@ -31,33 +31,32 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 .nav .nav__wrapper .nav__logo {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
-  color: #ffffff;
+  color: #fff;
   font-size: 34px;
 }
 .nav .nav__wrapper .nav__user-icon {
   width: 40px;
   height: 40px;
 }
-
 @media screen and (max-width: 1150px) {
   .nav .nav__wrapper {
     width: 100%;
-    padding: 0px 20px;
+    padding: 0 20px;
   }
 }
 @media screen and (max-width: 800px) {
   .nav {
-    padding: 20px 0px 40px;
+    padding: 20px 0 40px;
   }
 }
 @media screen and (max-width: 400px) {
@@ -65,7 +64,7 @@
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-style: normal;
-    color: #ffffff;
+    color: #fff;
     font-size: 20px;
   }
   .nav .nav__wrapper .nav__user-icon {
@@ -90,7 +89,7 @@
   position: relative;
   margin-right: 4px;
   border-radius: 4px;
-  background-color: #ffffff;
+  background-color: #fff;
   width: 33%;
   cursor: pointer;
 }
@@ -108,20 +107,19 @@
 }
 .search-bar .search-bar__button {
   border: none;
-  padding: 0px 24px;
+  padding: 0 24px;
   border-radius: 4px;
   background-color: #006ce4;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
-  color: #ffffff;
+  color: #fff;
   font-size: 16px;
   cursor: pointer;
 }
 .search-bar .search-bar__button:hover {
   background-color: #003b95;
 }
-
 @media screen and (max-width: 1150px) {
   .search-bar {
     width: 95%;
@@ -131,8 +129,8 @@
   .search-bar {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     gap: 4px;
     top: 75px;
     height: 227px;
@@ -144,7 +142,7 @@
     margin-right: 0;
   }
   .search-bar .search-bar__button {
-    padding: 16px 0px;
+    padding: 16px 0;
   }
 }
 @media screen and (max-width: 400px) {
@@ -153,19 +151,18 @@
   }
 }
 .main {
-  padding: 60px 0px;
+  padding: 60px 0;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 .main .main__wrapper {
   width: 1100px;
 }
-
 @media screen and (max-width: 1150px) {
   .main .main__wrapper {
     width: 95%;
@@ -182,13 +179,12 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
-
 .error {
   width: 100%;
-  padding: 100px 0px 0px 50px;
+  padding: 100px 0 0 50px;
 }
 .error .error__text {
   font-family: "Roboto", sans-serif;
@@ -197,7 +193,6 @@
   color: #353535;
   font-size: 48px;
 }
-
 .apartment-card {
   width: 100%;
   border: 1px solid #e8e8e8;
@@ -223,20 +218,27 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
-.apartment-card .apartment-card__wrapper .apartment-card__text-content .apartment-card__title {
+.apartment-card
+  .apartment-card__wrapper
+  .apartment-card__text-content
+  .apartment-card__title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-style: normal;
   color: #353535;
   font-size: 32px;
 }
-.apartment-card .apartment-card__wrapper .apartment-card__text-content .apartment-card__capacity-distance-wrapper .apartment-card__capacity {
+.apartment-card
+  .apartment-card__wrapper
+  .apartment-card__text-content
+  .apartment-card__capacity-distance-wrapper
+  .apartment-card__capacity {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -244,14 +246,21 @@
   font-size: 20px;
   margin-bottom: 10px;
 }
-.apartment-card .apartment-card__wrapper .apartment-card__text-content .apartment-card__capacity-distance-wrapper .apartment-card__distance {
+.apartment-card
+  .apartment-card__wrapper
+  .apartment-card__text-content
+  .apartment-card__capacity-distance-wrapper
+  .apartment-card__distance {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #343a40;
   font-size: 20px;
 }
-.apartment-card .apartment-card__wrapper .apartment-card__text-content .apartment-card__button {
+.apartment-card
+  .apartment-card__wrapper
+  .apartment-card__text-content
+  .apartment-card__button {
   border: 1px solid #003b95;
   background-color: transparent;
   border-radius: 10px;
@@ -263,7 +272,10 @@
   font-size: 18px;
   cursor: pointer;
 }
-.apartment-card .apartment-card__wrapper .apartment-card__text-content .apartment-card__button:hover {
+.apartment-card
+  .apartment-card__wrapper
+  .apartment-card__text-content
+  .apartment-card__button:hover {
   border-color: #006ce4;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -271,7 +283,6 @@
   color: #006ce4;
   font-size: 18px;
 }
-
 @media screen and (max-width: 680px) {
   .apartment-card {
     display: -webkit-box;
@@ -279,27 +290,34 @@
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   .apartment-card .apartment-card__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   .apartment-card .apartment-card__wrapper .apartment-card__image {
     width: 300px;
     height: auto;
     margin-bottom: 15px;
   }
-  .apartment-card .apartment-card__wrapper .apartment-card__text-content .apartment-card__title {
+  .apartment-card
+    .apartment-card__wrapper
+    .apartment-card__text-content
+    .apartment-card__title {
     margin-bottom: 7px;
   }
-  .apartment-card .apartment-card__wrapper .apartment-card__text-content .apartment-card__capacity-distance-wrapper .apartment-card__distance {
+  .apartment-card
+    .apartment-card__wrapper
+    .apartment-card__text-content
+    .apartment-card__capacity-distance-wrapper
+    .apartment-card__distance {
     margin-bottom: 10px;
   }
 }
@@ -309,14 +327,28 @@
     height: auto;
     margin-bottom: 15px;
   }
-  .apartment-card .apartment-card__wrapper .apartment-card__text-content .apartment-card__title {
+  .apartment-card
+    .apartment-card__wrapper
+    .apartment-card__text-content
+    .apartment-card__title {
     font-size: 24px;
   }
-  .apartment-card .apartment-card__wrapper .apartment-card__text-content .apartment-card__capacity-distance-wrapper .apartment-card__capacity,
-  .apartment-card .apartment-card__wrapper .apartment-card__text-content .apartment-card__capacity-distance-wrapper .apartment-card__distance {
+  .apartment-card
+    .apartment-card__wrapper
+    .apartment-card__text-content
+    .apartment-card__capacity-distance-wrapper
+    .apartment-card__capacity,
+  .apartment-card
+    .apartment-card__wrapper
+    .apartment-card__text-content
+    .apartment-card__capacity-distance-wrapper
+    .apartment-card__distance {
     font-size: 14px;
   }
-  .apartment-card .apartment-card__wrapper .apartment-card__text-content .apartment-card__button {
+  .apartment-card
+    .apartment-card__wrapper
+    .apartment-card__text-content
+    .apartment-card__button {
     width: 100%;
   }
 }
@@ -326,7 +358,7 @@
 }
 .apartment-details .apartment-details__amenities,
 .apartment-details .apartment-details__availability {
-  margin: 10px 0px;
+  margin: 10px 0;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -338,11 +370,13 @@
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   gap: 15px;
   margin-bottom: 30px;
 }
-.apartment-details .apartment-details__amenities-wrapper .apartment-details__amenitie {
+.apartment-details
+  .apartment-details__amenities-wrapper
+  .apartment-details__amenitie {
   border: 1px solid #868e96;
   border-radius: 8px;
   padding: 20px 130px 20px 20px;
@@ -357,25 +391,35 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
-.apartment-details .apartment-details__availability-details .apartment-details__date,
-.apartment-details .apartment-details__availability-details .apartment-details__price,
-.apartment-details .apartment-details__availability-details .apartment-details__no-date-warning {
+.apartment-details
+  .apartment-details__availability-details
+  .apartment-details__date,
+.apartment-details
+  .apartment-details__availability-details
+  .apartment-details__price,
+.apartment-details
+  .apartment-details__availability-details
+  .apartment-details__no-date-warning {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
   color: #353535;
   font-size: 20px;
 }
-.apartment-details .apartment-details__availability-details .apartment-details__no-date-warning {
+.apartment-details
+  .apartment-details__availability-details
+  .apartment-details__no-date-warning {
   max-width: 350px;
 }
-.apartment-details .apartment-details__availability-details .apartment-details__button {
+.apartment-details
+  .apartment-details__availability-details
+  .apartment-details__button {
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -384,24 +428,25 @@
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
-  color: #ffffff;
+  color: #fff;
   font-size: 18px;
   text-decoration: none;
 }
-.apartment-details .apartment-details__availability-details .apartment-details__button:hover {
+.apartment-details
+  .apartment-details__availability-details
+  .apartment-details__button:hover {
   background-color: #006ce4;
 }
-
 @media screen and (max-width: 680px) {
   .apartment-details .apartment-details__availability-details {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     gap: 15px;
     -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
   }
 }
 .footer {
@@ -411,30 +456,29 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 .footer .footer__wrapper {
   width: 1100px;
-  padding: 30px 0px;
+  padding: 30px 0;
 }
 .footer .footer__wrapper .footer__text {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
-  color: #ffffff;
+  color: #fff;
   font-size: 24px;
 }
-
 @media screen and (max-width: 1150px) {
   .footer .footer__wrapper {
     width: 100%;
-    padding: 30px 30px;
+    padding: 30px;
   }
 }
 @media screen and (max-width: 400px) {
   .footer .footer__wrapper {
-    padding: 20px 20px;
+    padding: 20px;
   }
   .footer .footer__wrapper .footer__text {
     font-size: 14px;
@@ -442,7 +486,7 @@
 }
 .reservation__success {
   width: 100%;
-  padding: 50px 0px;
+  padding: 50px 0;
 }
 .reservation__success .reservation__success-title {
   font-family: "Roboto", sans-serif;
@@ -451,14 +495,15 @@
   color: #353535;
   font-size: 40px;
 }
-.reservation__success .reservation__success-title .reservation__success-title-apartment {
+.reservation__success
+  .reservation__success-title
+  .reservation__success-title-apartment {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-style: normal;
   color: #353535;
   font-size: 40px;
 }
-
 .apartment-details__title,
 .reservation-details__title {
   font-family: "Roboto", sans-serif;
@@ -468,7 +513,6 @@
   font-size: 32px;
   margin-bottom: 25px;
 }
-
 .reservation__back-to-home-link .reservation__back-to-home-button {
   border: none;
   border-radius: 4px;
@@ -478,14 +522,13 @@
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
-  color: #ffffff;
+  color: #fff;
   font-size: 18px;
   text-decoration: none;
 }
 .reservation__back-to-home-link .reservation__back-to-home-button:hover {
   background-color: #006ce4;
 }
-
 @media screen and (max-width: 800px) {
   .main-reservation {
     padding-top: 60px;
@@ -505,20 +548,24 @@
 .reservation-receipt__table .reservation-receipt__table-header {
   background-color: #006ce4;
 }
-.reservation-receipt__table .reservation-receipt__table-header .reservation-receipt__table-header-piece {
-  padding: 15px 0px;
+.reservation-receipt__table
+  .reservation-receipt__table-header
+  .reservation-receipt__table-header-piece {
+  padding: 15px 0;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
-  color: #ffffff;
+  color: #fff;
   font-size: 18px;
   border: 1px solid #353535;
 }
 .reservation-receipt__table .reservation-receipt__table-body {
   background-color: #e8e8e8;
 }
-.reservation-receipt__table .reservation-receipt__table-body .reservation-receipt__table-body-piece {
-  padding: 15px 0px;
+.reservation-receipt__table
+  .reservation-receipt__table-body
+  .reservation-receipt__table-body-piece {
+  padding: 15px 0;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -527,14 +574,17 @@
   border: 1px solid #353535;
   text-align: center;
 }
-
 @media screen and (max-width: 550px) {
-  .reservation-receipt__table .reservation-receipt__table-header .reservation-receipt__table-header-piece {
-    padding: 10px 0px;
+  .reservation-receipt__table
+    .reservation-receipt__table-header
+    .reservation-receipt__table-header-piece {
+    padding: 10px 0;
     font-size: 12px;
   }
-  .reservation-receipt__table .reservation-receipt__table-body .reservation-receipt__table-body-piece {
-    padding: 10px 0px;
+  .reservation-receipt__table
+    .reservation-receipt__table-body
+    .reservation-receipt__table-body-piece {
+    padding: 10px 0;
     font-size: 12px;
   }
 }
@@ -549,7 +599,9 @@
   height: 300px;
   width: auto;
 }
-.reservation-apartment-details .reservation-apartment-details__name-capacity-distance-amenities-wrapper .reservation-apartment-details__name {
+.reservation-apartment-details
+  .reservation-apartment-details__name-capacity-distance-amenities-wrapper
+  .reservation-apartment-details__name {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -557,8 +609,12 @@
   font-size: 28px;
   margin-bottom: 30px;
 }
-.reservation-apartment-details .reservation-apartment-details__name-capacity-distance-amenities-wrapper .reservation-apartment-details__capacity,
-.reservation-apartment-details .reservation-apartment-details__name-capacity-distance-amenities-wrapper .reservation-apartment-details__distance {
+.reservation-apartment-details
+  .reservation-apartment-details__name-capacity-distance-amenities-wrapper
+  .reservation-apartment-details__capacity,
+.reservation-apartment-details
+  .reservation-apartment-details__name-capacity-distance-amenities-wrapper
+  .reservation-apartment-details__distance {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -566,15 +622,20 @@
   font-size: 20px;
   margin-bottom: 10px;
 }
-.reservation-apartment-details .reservation-apartment-details__name-capacity-distance-amenities-wrapper .reservation-apartment-details__amenities {
+.reservation-apartment-details
+  .reservation-apartment-details__name-capacity-distance-amenities-wrapper
+  .reservation-apartment-details__amenities {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   gap: 10px;
 }
-.reservation-apartment-details .reservation-apartment-details__name-capacity-distance-amenities-wrapper .reservation-apartment-details__amenities .reservation-apartment-details__amenitie {
+.reservation-apartment-details
+  .reservation-apartment-details__name-capacity-distance-amenities-wrapper
+  .reservation-apartment-details__amenities
+  .reservation-apartment-details__amenitie {
   border: 1px solid #868e96;
   border-radius: 8px;
   padding: 15px 50px 15px 15px;
@@ -584,13 +645,12 @@
   color: #353535;
   font-size: 16px;
 }
-
 @media screen and (max-width: 680px) {
   .reservation-apartment-details {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   .reservation-apartment-details .reservation-apartment-details__image {
     width: 100%;
@@ -604,14 +664,14 @@
   border: 1px solid #e8e8e8;
   border-radius: 8px;
   padding: 15px;
-  background-color: #ffffff;
+  background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   gap: 15px;
 }
 .amenities-modal .amenities-modal__column-amenitie {
@@ -620,11 +680,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 .amenities-modal .amenities-modal__column-amenitie label {
   font-family: "Roboto", sans-serif;
@@ -637,7 +697,6 @@
   width: 15px;
   height: 15px;
 }
-
 @media screen and (max-width: 800px) {
   .amenities-modal {
     left: 0;
@@ -652,7 +711,7 @@
   border: 1px solid #e8e8e8;
   border-radius: 8px;
   padding: 15px;
-  background-color: #ffffff;
+  background-color: #fff;
   width: 300px;
 }
 .people-modal .people-modal__counter-wrapper {
@@ -660,11 +719,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-bottom: 15px;
 }
 .people-modal .people-modal__counter-wrapper .people-modal__adults {
@@ -680,17 +739,23 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   border: 1px solid #e8e8e8;
   border-radius: 8px;
   padding: 5px;
 }
-.people-modal .people-modal__counter-wrapper .people-modal__counter-icons .people-modal__minus-icon {
+.people-modal
+  .people-modal__counter-wrapper
+  .people-modal__counter-icons
+  .people-modal__minus-icon {
   margin-right: 15px;
   cursor: pointer;
 }
-.people-modal .people-modal__counter-wrapper .people-modal__counter-icons .people-modal__counter {
+.people-modal
+  .people-modal__counter-wrapper
+  .people-modal__counter-icons
+  .people-modal__counter {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -698,14 +763,17 @@
   font-size: 16px;
   margin-right: 15px;
 }
-.people-modal .people-modal__counter-wrapper .people-modal__counter-icons .people-modal__plus-icon {
+.people-modal
+  .people-modal__counter-wrapper
+  .people-modal__counter-icons
+  .people-modal__plus-icon {
   cursor: pointer;
 }
 .people-modal .people-modal__button {
-  background-color: white;
+  background-color: #fff;
   border: 1px solid #003b95;
   border-radius: 4px;
-  padding: 10px 0px;
+  padding: 10px 0;
   width: 100%;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -714,7 +782,6 @@
   font-size: 16px;
   cursor: pointer;
 }
-
 .date-modal {
   position: absolute;
   z-index: 3;
@@ -723,16 +790,16 @@
   border: 1px solid #e8e8e8;
   border-radius: 8px;
   padding: 15px;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 .date-modal .rdrDefinedRangesWrapper {
   display: none;
 }
 .date-modal .date-modal__button {
-  background-color: white;
+  background-color: #fff;
   border: 1px solid #003b95;
   border-radius: 4px;
-  padding: 10px 0px;
+  padding: 10px 0;
   width: 100%;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -742,10 +809,9 @@
   cursor: pointer;
   margin-top: 15px;
 }
-
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }

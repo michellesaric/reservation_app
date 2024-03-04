@@ -1,5 +1,4 @@
 import { useState } from "react";
-import apartmentImage from "../../assets/apartment.png";
 import ApartmentDetails from "../ApartmentDetails/ApartmentDetails";
 
 const ApartmentCard = ({ apartment }) => {
