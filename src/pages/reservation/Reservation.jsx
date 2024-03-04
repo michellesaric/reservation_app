@@ -1,4 +1,4 @@
-import NavBar from "../../components/navBar/NavBar";
+import NavBar from "../../components/nav_bar/NavBar";
 import ReservationDetails from "./reservationdetails/ReservationDetails";
 import Footer from "../../components/footer/Footer";
 

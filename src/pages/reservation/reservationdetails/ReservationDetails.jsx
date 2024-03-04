@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { FilterContext } from "../../../context/FilterContext";
-import ReservationApartmentDetails from "../../../components/reservationApartmentDetails/ReservationApartmentDetails";
-import ReservationReceipt from "../../../components/reservationReceipt/ReservationReceipt";
+import ReservationApartmentDetails from "../../../components/reservation_apartment_details/ReservationApartmentDetails";
+import ReservationReceipt from "../../../components/reservation_receipt/ReservationReceipt";
 import { Link } from "react-router-dom";
 
 const ReservationDetails = () => {
